@@ -11,5 +11,11 @@
     "browser_action": {
         "default_icon": "Cash-icon-16.png",
         "default_popup": "popup.html"
-    }
+    },
+    "options_page": "options.html",
+    
+    "permissions": [
+        "storage"
+        
+    ]
 }
