@@ -25,18 +25,18 @@ buttonEl.addEventListener("click", () => {
   inputEl.innerHTML = "";
   localStorage.setItem("expense", JSON.stringify(total));
 
-  if (limitFromLocalStorage <= total) {
-    noti();
-  }
+//   if (limitFromLocalStorage <= total) {
+//     noti();
+//   }
 });
 
-const noti = () => {
-  chrome.notifications.create("",{
-    title: "Limit Reached",
-    type: "basic",
-    iconUrl: "Cash-icon-16.png",
-    message: "Uh No ! You have reached your Limit.",
-  })
-};
+// const noti = () => {
+//   chrome.notifications.create("",{
+//     title: "Limit Reached",
+//     type: "basic",
+//     iconUrl: "Cash-icon-16.png",
+//     message: "Uh No ! You have reached your Limit.",
+//   })
+// };
 
-noti();
+// noti();
