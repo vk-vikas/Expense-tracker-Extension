@@ -8,6 +8,12 @@ let dataFromLocalStorage = parseInt(
   JSON.parse(localStorage.getItem("expense"))
 );
 
+let limitFromLocalStorage = parseInt(JSON.parse(localStorage.getItem("limit")));
+
+if (limitFromLocalStorage) {
+  displayLimit.innerHTML = limitFromLocalStorage;
+}
+
 if (dataFromLocalStorage) {
   total = dataFromLocalStorage;
   display.innerHTML = total;
@@ -18,12 +24,19 @@ buttonEl.addEventListener("click", () => {
   display.innerHTML = total;
   inputEl.innerHTML = "";
   localStorage.setItem("expense", JSON.stringify(total));
+
+  if (limitFromLocalStorage <= total) {
+    noti();
+  }
 });
 
-let limitFromLocalStorage = parseInt(JSON.parse(localStorage.getItem("limit")));
+const noti = () => {
+  chrome.notifications.create("",{
+    title: "Limit Reached",
+    type: "basic",
+    iconUrl: "Cash-icon-16.png",
+    message: "Uh No ! You have reached your Limit.",
+  })
+};
 
-if (limitFromLocalStorage) {
-  displayLimit.innerHTML = limitFromLocalStorage;
-}
-
-//localStorage.clear();
+noti();
