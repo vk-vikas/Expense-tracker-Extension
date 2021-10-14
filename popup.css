@@ -1,0 +1,34 @@
+body {
+    background-color: white;
+}
+
+div {
+    padding: 10px;
+}
+
+img {
+    width: 200px;
+    margin-left: 10px;
+}
+
+input {
+    border-radius: 10px;
+    font-size: 1rem;
+    margin: 10px 0;
+    padding: 4px 10px;
+    color: seagreen;
+    font-weight: 600;
+}
+
+button {
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    background-color: seagreen;
+    color: white;
+    font-weight: 600;
+}
+
+#display-limit {
+    color: salmon
+}
