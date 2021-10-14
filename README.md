@@ -1,5 +1,7 @@
-  The popup page  
+  # The popup page  
+
 ![ss](images/ss1.png)
 
-  The Options page 
+  # The Options page
+   
 ![ss2](images/ss2PNG.png)
