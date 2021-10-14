@@ -4,12 +4,12 @@
     "description": "Ext that tracks users expenses",
     "version": "0.1",
     "icons": {
-        "128": "Cash-icon-128.png",
-        "48": "Cash-icon-48.png",
-        "16": "Cash-icon-16.png"
+        "128": "images/Cash-icon-128.png",
+        "48": "images/Cash-icon-48.png",
+        "16": "images/Cash-icon-16.png"
     },
     "browser_action": {
-        "default_icon": "Cash-icon-16.png",
+        "default_icon": "images/Cash-icon-16.png",
         "default_popup": "popup.html"
     },
     "options_page": "options.html",
